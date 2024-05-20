@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Entrada from "./components/Entrada";
 import SobreMi from "./components/SobreMi";
 import Tecnologias from "./components/Tecnologias";
+import Estudios from "./components/Estudios";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Entrada />
         <SobreMi />
         <Tecnologias/>
+        <Estudios/>
       </div>
     </div>
   );
