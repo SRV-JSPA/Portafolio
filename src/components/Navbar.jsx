@@ -1,4 +1,4 @@
-import logo from '../Images/logo_temporal.png'
+import logo from '../Images/logo.png'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 
