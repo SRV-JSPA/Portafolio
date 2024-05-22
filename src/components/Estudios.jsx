@@ -8,7 +8,6 @@ function Estudios () {
     try {
       const info = await axios.get('http://localhost:3000/education')
       setEducacion(info.data)
-      console.log(educacion );
     } catch (error) {
       console.log(error);
     }
