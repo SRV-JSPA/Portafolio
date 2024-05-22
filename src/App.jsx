@@ -5,6 +5,7 @@ import SobreMi from "./components/SobreMi";
 import Tecnologias from "./components/Tecnologias";
 import Estudios from "./components/Estudios";
 import Proyectos from "./components/Proyectos";
+import Contacto from "./components/Contacto";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Tecnologias/>
         <Estudios/>
         <Proyectos/>
+        <Contacto/>
       </div>
     </div>
   );
