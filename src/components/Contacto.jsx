@@ -12,7 +12,7 @@ const Contacto = () => {
         <div className="text-center tracking-tighter" >
           <motion.p whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}}  className="my-4" >{contacto.direccion}</motion.p>
           <motion.p whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 1}} className="my-4" >{contacto.numero}</motion.p>
-          <motion.a whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}} href="#" className="border-b">{contacto.email}</motion.a>
+          <motion.a whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1}} href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contacto.email}`} target="_blank" rel="noopener noreferrer" className="border-b">{contacto.email}</motion.a>
         </div>
     </div>
   )
