@@ -8,6 +8,44 @@ import {motion} from 'framer-motion'
 
 const Proyectos = () => {
 
+  const projects = [ {
+    "id": 4,
+    "title": "Restaurant managment system",
+    "image": "proyecto_bd",
+    "description": "This project is a full restaurant management using HTML and CSS for styles and PostgreSQL and PHP for the back-end technologies.",
+    "technologies": [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "PostgreSQL",
+        "PHP"
+    ]
+},
+{
+    "id": 5,
+    "title": "Personal cars blog",
+    "image": "blog",
+    "description": "This project was made using React and Vite.js in the front-end with a back-end REST Api service based on Express.js with a layer of security via JWT with token validations.",
+    "technologies": [
+        "React",
+        "Vite.js",
+        "Express.js",
+        "JWT"
+    ]
+},
+{
+    "id": 6,
+    "title": "Portafolio",
+    "image": "portafolio",
+    "description": "One of the most important projects for a developer, my personal portafolio is made with React, Vite.js in the front-end and Nest.js and MySQL in the back-end with TypeORM.",
+    "technologies": [
+        "React",
+        "Vite.js",
+        "Nest.js",
+        "TypeORM."
+    ]
+}]
+
   const imagen = (nombre_imagen) => {
     const imagenes = {
       'blog': blog,
@@ -26,19 +64,19 @@ const Proyectos = () => {
     return repositorios[nombre_proyecto];
   }
 
-    const [projects, setProjects] = useState([])
-    const data = async () => {
-      try {
-        const info = await axios.get('http://localhost:3000/projects')
-        setProjects(info.data)
-      } catch (error) {
-        console.log(error);
-      }
-    }
+    // const [projects, setProjects] = useState([])
+    // const data = async () => {
+    //   try {
+    //     const info = await axios.get('http://localhost:3000/projects')
+    //     setProjects(info.data)
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // }
   
-    useEffect(() => {
-      data()
-    }, [])
+    // useEffect(() => {
+    //   data()
+    // }, [])
 
   return (
     <div className="border-b border-neutral-900 pb-4" >

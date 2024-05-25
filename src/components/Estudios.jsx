@@ -4,19 +4,39 @@ import { useState } from "react"
 import {motion} from 'framer-motion'
 
 function Estudios () {
-  const [educacion, setEducacion] = useState([])
-  const data = async () => {
-    try {
-      const info = await axios.get('http://localhost:3000/education')
-      setEducacion(info.data)
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const educacion = [{
+    "id": 1,
+    "year": "2006 - 2021",
+    "grade": "Highschool",
+    "institution": "Intellego Bilingual School",
+    "description": "This was my school for more than 15 years and it is where I graduate from Highschool."
+},
+{
+    "id": 2,
+    "year": "2021 - 2023",
+    "grade": "Web development courses",
+    "institution": "Udemy",
+    "description": "Took several courses about web development and QA Testing to improve my programming skills at Udemy."
+},
+{
+    "id": 3,
+    "year": "2021 - Today",
+    "grade": "Computer Science & IT Engineering",
+    "institution": "Universidad del Valle de Guatemala",
+    "description": "I am currently in my third year of university, studying computer science and IT engineering, fulfilling my dream of studying this beautiful profession."
+}]
+  // const data = async () => {
+  //   try {
+  //     const info = await axios.get('http://localhost:3000/education')
+  //     setEducacion(info.data)
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
-  useEffect(() => {
-    data()
-  }, [])
+  // useEffect(() => {
+  //   data()
+  // }, [])
 
   return (
     <div className="border-b border-neutral-900 pb-4" >
