@@ -1,4 +1,4 @@
-import perfil from "../Images/perfil.png";
+import perfil from "../Images/foto_personal.jpg";
 import {motion} from 'framer-motion'
 
 const contenedor = (delay) => ({
@@ -36,7 +36,7 @@ const Entrada = () => {
         </div>
         <div className="w-full lg:w-1/2 lg:p-8" >
             <div className="flex justify-center " >
-                <motion.img initial={{x:100, opacity:0}} animate={{x:0, opacity:1}}  transition={{duration: 1, delay: 1.2}}  src={perfil} alt="Perfil" />
+                <motion.img  className="rounded-2xl" initial={{x:100, opacity:0}} animate={{x:0, opacity:1}}  transition={{duration: 1, delay: 1.2}}  height={50} width={550}  src={perfil} alt="Perfil" />
             </div>
         </div>
       </div>
